@@ -8,6 +8,7 @@ RUN apt-get update \
     openssh-client git \
     ca-certificates \
     gzip tar \
+    rsync \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /.kube && chmod g+rwX /.kube
